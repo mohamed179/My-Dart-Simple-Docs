@@ -4,6 +4,7 @@
 * [Define a class](#class-properties)
 * [Define a class](#class-methods)
 * [Define a class](#class-constructor)
+  * [Constructor name parameters](#constructor-named-parameters)
 * [Define a class](#class-inheritance)
 
 ## Define a class
@@ -80,7 +81,7 @@ class Person {
 }
 ```
 
-### Constructor name parameters
+### Constructor named parameters
 
 There is another constructor syntax
 
