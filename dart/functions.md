@@ -4,6 +4,7 @@
 * [Void return type](#defining-a-function)
 * [Calling a function](#calling-a-function)
 * [Main function](#main-function)
+* [Named parameters (Default parameters)](#named-parameters-default-parameters)
 
 ## Defining a function
 
@@ -61,5 +62,31 @@ Dart run main function as the root of any dart program
 ```dart
 void main () {
     // your program start here...
+}
+```
+
+## Named parameters (Default parameters)
+
+You can add function named parameters (default parameters) in dart by using the following syntax
+
+```dart
+return_type function_name (none_named_parameters..., {named_parameters...}) {
+    function_body...
+}
+...
+function_name(pareter_name: parameter_value, ...);
+```
+
+**Example:**
+
+```dart
+void printThose (int firstNum, {int secondNum = 0}) {
+    print(firstNum);
+    print(secondNum);
+}
+
+void main () {
+    printThose(7, secondNum: 10);
+    printThose(20);
 }
 ```
